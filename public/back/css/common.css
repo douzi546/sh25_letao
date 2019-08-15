@@ -140,3 +140,9 @@ ul, li{
     width:48%;
     height:400px;
 }
+
+.table.table-bordered td,
+.table.table-bordered th{
+    text-align: center;
+    vertical-align: middle;
+}

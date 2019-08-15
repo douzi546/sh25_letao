@@ -1,6 +1,29 @@
 .body_bg{
     background: #222D32;
 }
+*{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style: none;
+}
+a,
+a:hover,
+a:active,
+a:visited,
+a:link{
+    text-decoration: none;
+}
+
+ul, li{
+    /*margin: 0;*/
+    /*padding: 0;*/
+}
+
+.red{
+    color: #A94442;
+}
 .panel .panel-title{
     line-height: 40px;
     height:40px;
@@ -9,4 +32,111 @@
 }
 .mr_150{
     margin-top: 150px;
+}
+
+.lt_aside{
+    background: #222D32;
+    width:180px;
+    height:100%;
+    position: fixed;
+    left:0;
+    top:0;
+    z-index: 999;
+    transition: all 1s;
+}
+.lt_aside.hidemenu{
+    left:-180px;
+}
+.lt_aside .brand{
+    height:50px;
+    width:100%;
+    background: #367FA9;
+    line-height: 50px;
+    text-align: center;
+    font-size: 24px;
+}
+.lt_aside .brand a{
+    color: #fff;
+}
+.lt_aside .user{
+    padding-top: 30px;
+    height:180px;
+}
+.lt_aside .user img{
+    width:80px;
+    height:80px;
+    border-radius:50%;
+    display: block;
+    margin: 0 auto;
+}
+.lt_aside .user p{
+    height:40px;
+    line-height: 40px;
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+}
+.lt_aside .nav a{
+    height:40px;
+    line-height: 40px;
+    display: block;
+    color: #fff;
+    padding-left: 40px;
+    border-left: 3px solid transparent;
+}
+.lt_aside .nav i{
+    margin-right: 5px;
+}
+.lt_aside .nav .child a{
+    padding-left: 60px;
+}
+.lt_aside .nav a.current{
+    border-left:3px solid #006699;
+    background: #1D1F21;
+}
+
+
+
+/******************侧边栏完成******************/
+
+.lt_main{
+    height:1000px;
+    width:100%;
+    padding-left: 180px;
+    padding-top: 50px;
+    transition: all 1s;
+
+}
+.lt_main.hidemenu{
+    padding-left: 0px;
+}
+.lt_main .lt_topbar{
+    height:50px;
+    width:100%;
+    background: #3C8DBC;
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding-left: 180px;
+    transition: all 1s;
+}
+.lt_main .lt_topbar.hidemenu{
+    padding-left: 0px;
+}
+.lt_main .lt_topbar a{
+    height:50px;
+    width:50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+}
+.breadcrumb{
+    margin-top: 20px;
+}
+
+.echart_1,
+.echart_2{
+    width:48%;
+    height:400px;
 }

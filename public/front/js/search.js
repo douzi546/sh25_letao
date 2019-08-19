@@ -49,7 +49,7 @@ $(function(){
     $(".search-btn").click(function(){
         var key = $(".search_input").val().trim();
         if(key === ""){
-            alert("请输入搜索关键词");
+            mui.toast('请输入搜索关键字',{ duration:'long', type:'div' })
             return;
         }
         var arr =  getHistory();
@@ -64,6 +64,8 @@ $(function(){
         localStorage.setItem("search_list",JSON.stringify( arr ));
         render();
         $(".search_input").val("");
+
+        location.href = "searchlist.html?key="+ key ;
 
     })
 

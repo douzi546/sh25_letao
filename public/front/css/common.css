@@ -128,3 +128,23 @@ img{
     width:150px;
     height:150px;
 }
+
+
+.lt_search{
+    padding: 10px;
+    position: relative;
+}
+.lt_search .search_input{
+    height:34px;
+    line-height: 34px;
+    font-size: 12px;
+    border: 1px solid #007AFF;
+    border-radius: 5px;
+    margin: 0;
+}
+.lt_search .search-btn{
+    position: absolute;
+    right:10px;
+    top:10px;
+    border-radius: 0 5px 5px 0;
+}

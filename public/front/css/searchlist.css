@@ -1,0 +1,34 @@
+.lt_sort{
+    height:30px;
+    line-height: 30px;
+    font-size: 12px;
+    background: #eee;
+}
+.lt_sort a{
+    float: left;
+    width:25%;
+    color: #666;
+    text-align: center;
+}
+.lt_sort a.current{
+    color:#FF8C00;
+}
+.lt_sort a i{
+    margin: 0 3px;
+}
+
+.loading{
+    width:50px;
+    height:50px;
+    border: 4px solid #069;
+    position: absolute;
+    left:50%;
+    transform: translateX(-50%);
+    top:150px;
+    animation:rotate 1.5s infinite;
+}
+
+@keyframes rotate{
+    from{ transform: translateX(-50%) rotate(0deg) }
+    to{transform: translateX(-50%) rotate(360deg)}
+}

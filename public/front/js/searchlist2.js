@@ -114,6 +114,18 @@ $(function(){
         }
     });
 
+    $(".lt_product").on("tap","a",function(){
+        var productId = $(this).data("id");
+        location.href = "product.html?productId=" + productId;
+    })
+
+
+
+
+
+
+
+
 
 
 
